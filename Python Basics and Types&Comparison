@@ -1,0 +1,268 @@
+# LEVEL 1: INTERMEDIATE
+
+#Lesson 1: Create four variables print all four
+name = "Teatoh"
+age = 23
+height = 180.00
+learning_python = True
+print(name)
+print(age)
+print(height)
+print(learning_python)
+
+#Lesson 2: updating variable
+price = 1500
+price = 2000
+print(price)
+
+# Lesson 3: Display type
+integer = 25
+floating_point = 25.0
+string = "25"
+print(type(integer))
+print(type(string))
+print(type(floating_point))
+
+# Lesson 4: Compare 15 and 20: ==, !=, <, >, <=, >=
+print(15 == 20)
+print(15 != 20)
+print(15 < 20)
+print(15 <= 20)
+print(15 > 20)
+print(15 >= 20)
+
+# Lesson 5: Convert 45 to both an integer and a string
+letter = "45"
+number = 45
+convert_letter = int(letter)
+print(convert_letter)
+convert_number = str(number)
+print(convert_number)
+print(type(convert_number))
+print(type(convert_letter))
+
+# Lesson 6: Convert float to integer and vice-versa
+pi = 3.145678932
+convert_pi = int(pi)
+print(convert_pi)
+convert_int = float(convert_pi)
+print(convert_int)
+
+# Lesson 7: Diff type comparison
+x = 10
+y = 10.0
+print(x == y)
+print(type(x) == type(y))
+
+
+# LEVEL 2: DIFFICULT
+
+# Lesson 1: Ask the user to enter a number as text. Convert it to an integer and print the number multiplied by 3.
+# Assume the input is a valid whole number.
+#text = input(int("Type a nuber: "))
+text = int(input("Type any number: "))
+multiple = text * 3
+print(multiple)
+
+# Lesson 2: Comparing String and Boolean
+string = "True"
+bollean = True
+compare_values = string == bollean
+print(compare_values)
+compare_type = type(string) == type(bollean)
+print(compare_type)
+
+# Lesson 3: Run and Predict
+print(int(19.99))
+print(int(-19.99))
+print(float(int(19.99)))
+print(int(float(19.99)))
+
+# Lesson 4: Boolean Comparison
+a = 8
+b = 12
+#True = a < b
+#False = a == b
+#False = a > b
+
+# Lesson 5: Convert to float then intergre
+word = "27.85"
+convert_word = float("27.85")
+print(convert_word)
+new_integer = int(convert_word)
+print(new_integer)
+
+# Lesson 6: Convert to int then float
+score = 72.5
+print(int(score))
+print(float(int(score)))
+#WHY? once an int (i.e whole number) needs to convert to a float, just .0 is added and not the original float
+
+# Lesson 7:
+print(bool(0))
+print(bool(1))
+print(bool(""))
+print(bool("False"))
+print(bool(-3))
+# Diff btw empty and Non is that empty == False while Non == True
+
+
+# LEVEL THREE: VERY DIFFICULT
+
+#Lesson 1: Create variables for an item's price (2499.95), quantity (3), item name ("Notebook"), and whether it is in stock (True).
+# Calculate the total cost and print each variable with its type.
+price = 2499.95
+quantity = 3
+item_name = "Notebook"
+cost_of_notebook = price * quantity
+print(cost_of_notebook)
+print(type(price))
+print(type(quantity))
+print(type(item_name))
+#Whether it is in stock??
+
+#Lesson 2: Ask a user to enter a decimal number. Convert it to float, then int, then float again.
+# Print the original and converted values. Explain precisely what information was lost.
+raw_number = (input("Insert a decimal number please: "))
+print(raw_number)
+convert_rn = float(raw_number)
+convert_rn_int = int(convert_rn)
+convert_rn_int_float = float(convert_rn_int)
+print(convert_rn_int_float)
+# Infor lost is... the remaining digits after the point (.)
+
+# Lesson 3: Withour running the code, predict the output and type
+print(type(7 == 7.0))
+print(7 == 7.0)
+print(type(int(7.9) == 7))
+print(int(7.9) == 7)
+print(type(str(7) == "7"))
+print(str(7) == "7")
+
+# Lesson 4: #print comparative result as a boolean
+type_age = input("How old are you? ")
+print(type(type_age))
+convert_type_age = int(type_age)
+checks = convert_type_age >= 18
+print(checks)
+
+# Lesson 5:
+product_price = "1500.75"
+convert_pp_to_float = float(product_price)
+save = product_price == convert_pp_to_float
+print(save)
+#convert_pp_to_int = int(product_price)
+#save2 = product_price == convert_pp_to_int
+#print(save2)
+
+#Lesson 6:
+p = 12
+q = 12.0
+r = "12"
+equal = p == q
+equal2 = p == r
+equal3 = q == float(r)
+print(equal)
+print(equal2)
+print(equal3)
+
+# Lesson 7:
+measurement = 13.4463738
+print(int(measurement))
+print(float(int(measurement)))
+# Original decimal can't be recovered cause regardless of the digits after '.', conversion to int always maintain the whole number
+# How to preserve the original float is to save it in a variable
+
+### TYPES AND COMPARISIONS: SECTION 2 (APPLIED QUESTIONS)
+
+#Applied Question 1: The payroll discrepancy
+submitted_salary = "250000"
+benchmark_salary = 250000
+
+# 1. Display the type of submitted salary
+print(type(submitted_salary))
+print(type(benchmark_salary))
+
+# 2. Compare submitted salary directly with benchmark salary
+print(submitted_salary == benchmark_salary)
+
+# 3. Convert the submitted salary to the appropriate type
+convert = int(submitted_salary)
+print(type(convert))
+print(convert)
+
+# and compare with the benchmark
+print(convert == benchmark_salary)
+
+# Data Analyst comments: Yes the Hr claim of 250k being the salary of every employee is true
+# The first comparison disagrees wit the 3rd because they are in diff types
+
+
+# Applied Question 2: The construction budget gatekeeper
+quoted_price = 1500.00
+benchmark_text = "1500"
+
+# 1. Display the types of both values
+print(type(quoted_price))
+print(type(benchmark_text))
+
+# 2. Check whether the original values are equal
+print(quoted_price == benchmark_text)
+
+# 3. Convert bench mark text into a suitable type
+convert = float(benchmark_text)
+print(convert)
+print(type(convert))
+# compare it with quoted price
+print(convert == quoted_price)
+
+# 4. Check whether quoted price is greater than 1499
+print(quoted_price > 1499)
+
+# Q&A no, data can be diff in type but equal in value, yes conversion from string to int/float chages the value
+
+# Applied Question 3: The Customer Eligibility System
+customer_age = "18"
+minimum_age = 18
+# 1. Check type of customer's age
+print(type(customer_age))
+# 2. Compare cust age with min. age
+eligible = customer_age >= minimum_age
+print(eligible)
+print(type(eligible))
+# 3. Convert cus age to correct
+convert = int(customer_age)
+print(convert)
+# 4. Store the result of age comparison in eligible
+# 5. print eligible and its data type
+
+# Applied Question 4: The suspicious inventory record
+warehouse_stock = 0
+online_stock = "0"
+# 1. Display type of each stock values
+print(type(warehouse_stock))
+print(type(online_stock))
+# 2. Check whether the two original values are equal
+print(warehouse_stock == online_stock)
+# 3. convert online stock to an appropraite numeric
+convert = int(online_stock)
+# 4. Compare convert to warehouse
+print(convert == warehouse_stock)
+# 5. Check whether warehouse is less than or equal to zero
+print(warehouse_stock <= 0)
+
+#Applied Question 5: The Data Integrity Audit
+original_measurement = 13.4463738
+# 1. Store the integer conversion in 'whole_measurement'
+whole_measurement = int(original_measurement)
+# 2. Convert whole mea back to a float and store in restored meas
+restored_measurement = float(whole_measurement)
+# 3. Check whether ori equals restore
+print(original_measurement == restored_measurement)
+# 4. Check whether restored is < original measure
+print(restored_measurement < original_measurement)
+# 5. Display all 3 types
+print(original_measurement)
+print(whole_measurement)
+print(restored_measurement)
+
